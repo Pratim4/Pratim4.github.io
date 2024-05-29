@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pradeep - Personal Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- <link rel="stylesheet" href="pc.css"> -->
+    <!-- <link rel="stylesheet" href="tablet.css"> -->
+    <!-- <link rel="stylesheet" href="phone.css"> -->
+    <!-- <link rel="stylesheet" href="mypc.css"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: teal;
+            color: white;
+            font-family: "Poppins", sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(11, 95, 95);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            cursor: pointer;
+            color: aquamarine;
+            font-size: 1.02rem;
+        }
+
+        main hr {
+            /* margin: 40px 80px;
+            border: 0;
+            background: rgb(26, 202, 202);
+            height: 0.2px; */
+            margin: 35px 111px;
+            border: 0;
+            background: rgb(26, 202, 202);
+            height: 0.2px;
+            display: flex;
+            justify-content: center;
+            width: 87%;
+            align-items: center;
+            position: relative;
+            right: 25px;
+
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        #firstSection {
+            display: flex;
+            justify-content: space-around;
+            margin: 130px 0;
+            align-items: center;
+        }
+
+        #firstSection>div {
+            width: 30%;
+        }
+
+        .leftSection {
+            /* background-color:green ; */
+            font-size: 2.6rem;
+            /* margin: 70px 0; */
+        }
+
+        .rightSection img {
+            width: 80%;
+            border-radius: 50%;
+            box-shadow: 0em 0 2.8em rgb(53, 22, 203);
+
+            /* margin: 20px 0; */
+            
+            
+            transition: all 0.5s ease-in-out;
+        }
+
+        .purple {
+            color: rgb(162, 233, 133);
+        }
+
+        #element {
+            color: rgb(43, 235, 78);
+        }
+
+        #firstSection .rightSection {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .rightSection .button button {
+            margin: 27px 26px;
+            padding: 3px 14px;
+            background-color: #349da0;
+            color: #821109;
+            box-shadow: 0em 0 2.8em rgb(21, 20, 24);
+
+        }
+
+
+        .rightSection .hire {
+            width: 116px;
+            margin: 1px 10px;
+        }
+
+        .rightSection .hire:hover {
+            cursor: pointer;
+        }
+
+        #secondSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 25vh;
+        }
+
+        #secondSection h1 {
+            font-size: 1.9rem;
+        }
+
+        .textGrey {
+            color: gray;
+        }
+
+        #secondSection p {
+            color: grey;
+            font-size: 10px;
+        }
+
+        #thirdSection h1 {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            font-size: 34px;
+        }
+
+        #thirdSection {
+            height: 650px;
+        }
+
+        .card {
+            border: 2px solid teal;
+            border-radius: 10px;
+            width: 84%;
+            margin: 24px 103px;
+            height: 245px;
+            display: inline-block;
+            background-image: url(static/back1.jpg);
+            /* background-repeat: no-repeat; */
+            background-size: cover;
+            box-shadow: 0em 0 2em rgb(100, 100, 98);
+
+        }
+
+        .card h3 {
+            text-align: center;
+            margin: 15px 12px;
+            font-family: "Poppins", sans-serif;
+            color: teal;
+            font-size: 24px;
+
+        }
+
+        .card-box {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+
+        }
+
+        .card-content {
+            padding: 0 10px;
+        }
+
+        .card-content li {
+            font-size: 20px;
+            font-family: "Poppins", sans-serif;
+            color: teal;
+
+
+        }
+
+        .card-img {
+            height: 121px;
+            padding: 0 14px;
+
+            /* height: inherit; */
+        }
+
+        .card-img img {
+            height: inherit;
+            font-weight: 100px;
+            /* padding: 0 14px; */
+        }
+
+        .services1 {
+            padding: 0px 25px;
+            padding-right: 345px;
+        }
+
+        .services1 p {
+            font-size: 13px;
+            color: gray;
+
+        }
+
+        #fourthSection {
+            height: 250px;
+        }
+
+        #fourthSection h1 {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            font-size: 34px;
+        }
+
+        #fourthSection .box {
+            border: 1px solid;
+            background: rgb(26, 212, 190);
+            width: 80vw;
+            height: 2px;
+            margin: 162px;
+            display: flex;
+            position: relative;
+            top: -86px;
+            left: -25px;
+        }
+
+        #fourthSection .verticle {
+            height: 50px;
+            width: 1px;
+            background-color: rgb(39, 209, 227);
+            margin: 0 100px;
+        }
+
+        .image-top {
+            width: 30px;
+            position: relative;
+            top: -32px;
+            left: -12px;
+        }
+
+        .vertical-text {
+            bottom: -8px;
+            position: relative;
+            right: 15px;
+        }
+
+        #css {
+
+            position: relative;
+            top: -37px;
+            left: -15px;
+            width: 25px;
+        }
+
+        #css1 {
+            bottom: 3px;
+            position: relative;
+            right: 12px;
+        }
+
+        #fifthSection {
+            height: 300px;
+            justify-content: center;
+        }
+
+        #fifthSection h1 {
+            font-size: 34px;
+            text-align: center;
+
+        }
+
+        .contact {
+            display: flex;
+            /* justify-content: center; */
+            height: 200px;
+            border: 2px;
+            width: 87%;
+            flex-direction: column;
+            align-items: center;
+            margin: 0 83px;
+            padding-top: -50px;
+            /* background-color: moccasin; */
+            color: rgb(29, 91, 91);
+            background-image: url("static/contact.jpg");
+            background-size: cover;
+            background-position: 0cqh;
+            z-index: -1;
+
+        }
+
+        .contact .contact-img {
+            width: 30px;
+            height: 23px;
+            padding: 0 12px;
+            margin: 8px;
+            position: relative;
+            top: 14px;
+        }
+
+        .contact a {
+            text-decoration: none;
+            color: teal;
+        }
+
+        .contact1 {
+            position: relative;
+            left: -69px;
+        }
+
+        .contact3 {
+            position: relative;
+            left: -112px;
+        }
+
+        .contact4 {
+            position: relative;
+            left: -22px;
+        }
+
+        .footer {
+            background-color: rgb(6, 56, 56);
+            height: 30px;
+        }
+
+        .footer h2 {
+            font-size: 20px;
+        }
+
+        .burger {
+            display: none;
+            position: absolute;
+            cursor: pointer;
+            right: 5%;
+            top: 13px;
+        }
+
+        .line {
+            width: 33px;
+            background-color: white;
+            height: 4px;
+            margin: 3px 3px;
+        }
+
+        @media only screen and (min-width: 992px) and (max-width: 1305px) {
+            #firstSection .button button {
+                margin: 24px 4px;
+            }
+
+            #secondSection {
+                height: 30vh;
+            }
+
+            .card {
+                height: 257px;
+                width: 79%;
+            }
+
+            .card-content li {
+                font-size: 18px;
+            }
+
+            .services1 {
+                padding: 0 16px;
+                padding-right: 279px;
+            }
+
+            #fourthSection {
+                height: 215px;
+            }
+
+            #fourthSection .verticle {
+                margin: 0 80px;
+            }
+
+            #fourthSection .box {
+                margin: 90px;
+                width: 78vw;
+                top: -22px;
+                left: 23px;
+            }
+
+            .contact {
+                width: 88%;
+            }
+        }
+
+        .button a {
+            text-decoration: none;
+            color: #821109;
+        }
+
+        @media only screen and (min-width: 767px) and (max-width: 991px) {
+            main {
+                width: 92%;
+            }
+
+            .left {
+                font-size: 2rem;
+            }
+
+            nav ul li {
+                margin: 0 9px;
+            }
+
+            .card {
+                margin: 24px 49px;
+            }
+
+            #firstSection {
+                width: 109%;
+                margin: 73px 0;
+            }
+
+            .leftSection {
+                font-size: 2.1rem;
+                margin: 0;
+            }
+
+            #secondSection {
+                margin-left: 96px;
+                height: 26vh;
+            }
+
+            .textGrey {
+                font-size: 12px;
+            }
+
+            #secondSection h1 {
+                font-size: 1.5rem;
+            }
+
+            #secondSection li {
+                font-size: 14px;
+            }
+
+            #secondSection p {
+                font-size: 8px;
+            }
+
+            #thirdSection h1 {
+                font-size: 26px;
+            }
+
+            .card {
+                width: 86%;
+                height: 226px;
+                margin: 27px 74px;
+            }
+
+            .card h3 {
+                font-size: 18px;
+            }
+
+            .card-content li {
+                font-size: 13px;
+            }
+
+            .services1 {
+                padding-right: 103px;
+            }
+
+
+            #fourthSection {
+                height: 215px;
+            }
+
+            #fourthSection h1 {
+                font-size: 26px;
+            }
+
+            #fourthSection .verticle {
+                margin: 0 50px;
+            }
+
+            #fourthSection .box {
+                margin: 76px;
+                width: 66vw;
+                top: -3px;
+                left: 42px;
+            }
+
+            .vertical-text {
+                bottom: -11px;
+                right: 24px;
+                font-size: 13px;
+            }
+
+            #css1 {
+                bottom: -7px;
+                right: 15px;
+            }
+
+            #fifthSection h1 {
+                font-size: 26px;
+            }
+
+            .contact {
+                width: 86%;
+                height: 50%;
+            }
+
+            .contact .contact-img {
+                width: 19px;
+                height: 15px;
+                padding: 0 12px;
+                margin: 8px;
+                top: 10px;
+            }
+
+            main hr {
+                margin: 29px 100px;
+            }
+
+            .footer {
+                width: 109%;
+            }
+        }
+
+        @media only screen and (max-width:767px) {
+            nav ul {
+                flex-direction: column;
+                margin: 10px;
+            }
+
+            nav ul li {
+                margin: 5px 23px;
+            }
+
+            .card {
+                margin: 24px 45px;
+            }
+
+            main hr {
+                margin: 35px 25px;
+                right: -26px;
+            }
+
+            #fourthSection .box {
+                margin: 58px;
+                top: 7px;
+                left: 37px;
+            }
+
+            #fourthSection .verticle {
+                margin: 35px 40px;
+                height: 21px;
+                position: relative;
+                top: -31px;
+            }
+
+            .vertical-text {
+                font-size: 11px;
+            }
+
+            .contact {
+                margin: 0 40px;
+            }
+
+            .leftSection {
+                font-size: 1.9rem;
+            }
+
+            .services1 {
+                padding: 0 11px;
+                padding-right: 165px;
+            }
+
+            .card-img {
+                height: 84px;
+                padding: 0 14px;
+            }
+
+            .card-content {
+                padding: 0px;
+            }
+
+            .card-content li {
+                font-size: 11px;
+            }
+
+            .card h3 {
+                font-size: 20px;
+            }
+
+            .card {
+                height: 181px;
+            }
+
+            .services1 p {
+                font-size: 8px;
+
+            }
+
+            #thirdSection h1 {
+                font-size: 25px;
+            }
+
+            .textGrey {
+                font-size: 10px;
+            }
+
+            #secondSection h1 {
+                font-size: 1.5rem;
+            }
+
+            #secondSection li {
+                font-size: 15px;
+            }
+
+            #secondSection p {
+                font-size: 8px;
+            }
+
+            #secondSection {
+                height: 45vh;
+            }
+
+            .thirdSection {
+                height: 515px;
+            }
+
+            .image-top {
+                top: -40px;
+            }
+
+            #css {
+                top: -44px;
+            }
+
+            #fourthSection h1 {
+                font-size: 25px;
+            }
+
+            #fifthSection {
+                height: 272px;
+            }
+
+            .footer h2 {
+                font-size: 15px;
+            }
+
+            #fifthSection h1 {
+                font-size: 25px;
+            }
+
+            .burger {
+                display: block;
+            }
+
+            .navbar {
+                height: 160px;
+            }
+
+            .h-nav-resp {
+                height: 50px;
+            }
+
+            .v-class-resp {
+                opacity: 0;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar h-nav-resp">
+            <div class="left">
+                My Portfolio
+            </div>
+            <div class="right">
+                <ul class="nav-list v-class-resp">
+                    <li><a href="#firstSection">Home</a></li>
+                    <li><a href="#secondSection">About</a></li>
+                    <li><a href="#fourthSection">Skills</a></li>
+                    <li><a href="#thirdSection">Projects</a></li>
+                    <li><a href="#fifthSection">Contact Me</a></li>
+                </ul>
+            </div>
+            <div class="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="firstSection">
+            <div class="leftSection">
+                Hi, My name is <span class="purple">Pradeep Timalsina</span>.
+                <div>I am a hardworking and passionate</div>
+                <span id="element"></span>
+            </div>
+            <div class="rightSection">
+                <img src="static/pradeep1.jpg" alt="ssi">
+                <div class="button">
+                    <button class="hire">Hire</button>
+                    <button><a href="static/pradeep resume fc.pdf">Download CV</a></button>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section id="secondSection">
+            <span class="textGrey">
+                What I have done so far.
+            </span>
+            <h1>Work Experience</h1>
+            <li>Frontend Web Developer:</li>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Working as an intern for Front End Web Developer in
+                Prestigious Prodigy Infotech after graduating from Bachelor in Engineering.</p>
+            <li>Backend Web Developer</li>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Continuing my journey in Web Development as a
+                Backend Web Developer with Node.js and uplifting my professional life from XYZ company. </p>
+        </section>
+
+        <hr>
+        <section id="thirdSection">
+            <h1>About Me</h1>
+            <div class="card">
+                <h3>My Projects</h3>
+                <div class="card-box">
+                    <div class="card-img">
+                        <img src="static/project.png" alt="Logo">
+                    </div>
+                    <div class="card-content">
+                        <div class="services">
+                            <li>Tic Tac Toe (Using HTML, CSS and JavaScript)</li>
+                            <li>My Personal Portfolio Website(Using HTML, CSS and JavaScript)</li>
+                            <li>Responsive Landing Page(Using HTML, CSS and JavaScript)</li>
+                            <li>Website for Dance Academy(Using HTML, CSS and JavaScript)</li>
+                            <li>Weather App</li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <h3>Education Background</h3>
+                <div class="card-box">
+                    <div class="card-img">
+                        <img src="static/education.png" alt="Logo">
+                    </div>
+                    <div class="card-content">
+                        <div class="services1">
+                            <li>Higher Secondary School(+2)</li>
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;National Integrated College</p>
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Science</p>
+                            <li>Bachelor in Engineering</li>
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sagarmatha Engineering College</p>
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Electronics, Communication and Information</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section id="fourthSection">
+            <h1>Skills</h1>
+            <div class="box">
+                <div class="verticle">
+                    <img class="image-top" src="static/html.png" alt="">
+                    <div class="vertical-text">
+                        HTML
+                    </div>
+                </div>
+                <div class="verticle">
+                    <img class="image-top" id="css" src="static/css.png" alt="">
+                    <div class="vertical-text" id="css1">
+                        CSS
+                    </div>
+                </div>
+                <div class="verticle">
+                    <img class="image-top" src="static/js.png" alt="">
+                    <div class="vertical-text">
+                        JavaScript
+                    </div>
+                </div>
+                <div class="verticle">
+                    <img class="image-top" src="static/python.png" alt="">
+                    <div class="vertical-text">
+                        Python
+                    </div>
+                </div>
+                <div class="verticle">
+                    <img class="image-top" src="static/sql.png" alt="">
+                    <div class="vertical-text">
+                        SQL
+                    </div>
+                </div>
+
+            </div>
+
+            </div>
+        </section>
+        <hr>
+        <section id="fifthSection">
+            <h1>Contact Me</h1>
+            <div class="contact">
+                <div class="contact1">
+                    <img class="contact-img" src="static/phone.png" alt="">
+                    <a href="">+977-9845067999</a>
+                </div>
+                <div class="contact2">
+                    <img class="contact-img" src="static/gmail.png" alt="">
+                    <a href="">timalsinapradeep4444@gmail.com</a>
+                </div>
+                <div class="contact3">
+                    <img class="contact-img" src="static/github.png" alt="">
+
+                    <a href=" https://github.com/Pratim4">Pratim4</a>
+                </div>
+                <div class="contact4">
+                    <img class="contact-img" src="static/linkedin.png" alt="">
+                    <a href="https://linkedin.com/in/pradeep-timalsina-179004247/">pradeep-timalsina-179004247 </a>
+                </div>
+            </div>
+
+        </section>
+        <section class="footer">
+            <h2>Copyright 2024 © PradeepPortfolio44.com || All Rights Reserved </h2>
+        </section>
+
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Data Engineer', '&amp; Web Designer.'],
+            typeSpeed: 50,
+        });
+        burger = document.querySelector('.burger');
+        navbar = document.querySelector('.navbar');
+        navList = document.querySelector('.nav-list');
+        burger.addEventListener('click', () => {
+            // navbar.classList.toggle('v-class-resp');
+            navList.classList.toggle('v-class-resp');
+            navbar.classList.toggle('h-nav-resp');
+        })
+    </script>
+</body>
+
+</html>
